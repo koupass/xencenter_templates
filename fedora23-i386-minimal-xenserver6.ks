@@ -6,11 +6,10 @@
 install
 
 # Install from a friendly mirror and add updates
-url --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-install-21&arch=$basearch
-#url --url=http://mirror.rackspace.com/fedora/releases/23/Everything/i386/os/
+#url --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-install-21&arch=$basearch
+url --url=http://mirror.rackspace.com/fedora/releases/23/Server/i386/os/
 # repo --name=fedora --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-$releasever&arch=$basearch
-repo --name=updates --mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f$releasever&arch=$basearch
-
+repo --name=updates 
 # Language and keyboard setup
 lang en_US.UTF-8
 keyboard us
